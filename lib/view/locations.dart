@@ -84,7 +84,7 @@ class _LocationsListState extends State<LocationsList> {
           backgroundColor: const Color(0xFF17192D),
         ),
         body: _loading
-            ? const Center(child: Text('Carregando'))
+            ? const Center(child: Text('Loading'))
             : SingleChildScrollView(
                 physics: const NeverScrollableScrollPhysics(),
                 child: Padding(
