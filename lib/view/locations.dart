@@ -128,6 +128,7 @@ class _LocationsListState extends State<LocationsList> {
                             children: [
                               ElevatedButton(
                                 onPressed: () async {
+                                  _searchController.text = '';
                                   if (energyFilterButton == false) {
                                     alertFilterButton = false;
                                     energyFilterButton = true;
@@ -182,6 +183,7 @@ class _LocationsListState extends State<LocationsList> {
                               ),
                               ElevatedButton(
                                 onPressed: () async {
+                                  _searchController.text = '';
                                   if (alertFilterButton == false) {
                                     alertFilterButton = true;
                                     energyFilterButton = false;

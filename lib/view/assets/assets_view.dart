@@ -15,6 +15,7 @@ ListView assets({required List<Equipment> apiData, required BuildContext context
 Widget buildPanel(Equipment total, BuildContext context, double padding) {
   double heightDevice = MediaQuery.of(context).size.height;
   double widthDevice = MediaQuery.of(context).size.width;
+  if (padding > 21) padding = 21;
   if (total.children!.isEmpty) {
     return Padding(
       padding: EdgeInsets.only(left: padding),
